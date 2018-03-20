@@ -1,0 +1,93 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat:100,100i,200,300, 400,500,700,800,900');
+
+//Variables
+@amarillo: #FF9A1B;
+@tablet: 768px;
+@laptop: 1024px;
+@desktop: 1140px;
+@bigScreen: 1400px;
+/* !Media Querys */
+@mqTablet:      ~"only screen and (min-width: @tablet)";
+@mqlaptop:      ~"only screen and (min-width: @laptop)";
+@mqDesktop:     ~"only screen and (min-width: @desktop)";
+@mqBigScreen:   ~"only screen and (min-width: @bigScreen)";
+
+//Mixins
+.responsiveFont(@base: 8vw,@anchoMaximo: @desktop,@tope: 3rem) {
+    font-size: @base;
+    @media (min-width: @anchoMaximo) {
+        font-size: @tope;
+    }
+}
+
+.button(@background:@amarillo, @radius:10px, @anchoDeLinea: 3px, @colorDeLinea: @amarillo, @color:white){
+    background: @background;
+    border-radius: @radius;
+    padding: .5em 1em;
+    border: @anchoDeLinea solid @colorDeLinea;
+    color: @color;
+}
+
+//General
+body {
+    background-color: black;
+    font-size: 16px;
+    font-family: 'Montserrat', sans-serif;
+}
+.row {
+    margin-right: 0;
+    margin-left: 0;
+}
+
+//Especísicos
+#principal {
+    background: url(../images/bkg-gain.jpg) no-repeat center center;
+    background-size: cover;
+    height: 100vh;
+    width: 100%;
+    display: block;
+}
+
+#header {
+    padding: 1em;
+    img {
+        width: 100%;
+        max-width: 320px;
+    }
+}
+
+#datos {
+    text-align: center;
+    text-transform: uppercase;
+    color: white;
+    padding-bottom: 85px;
+    img {
+        max-width: @tablet;
+        margin-top: 52vh;
+    }
+    h1 {
+        .responsiveFont(8vw,1280px,5rem);
+        margin-bottom: .2em;
+        span {
+            font-weight: 100;
+            font-style: italic;
+        }
+    }
+    h2 {
+        font-weight: 400;
+        margin: 0 auto .2em;
+        .responsiveFont(7vw,1280px,4rem);
+        span {
+            font-weight: 100;
+        }
+    }
+    h3 {
+        font-weight: 500;
+        margin: 0 auto .8em;
+        .responsiveFont(6vw,1280px,3rem);
+    }
+    button {
+        .button();
+        .responsiveFont(4vw,@tablet,1.8rem);
+    }
+}

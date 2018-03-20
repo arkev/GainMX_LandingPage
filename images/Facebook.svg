@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg width="64px" height="64px" viewBox="0 0 64 64" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 49.1 (51147) - http://www.bohemiancoding.com/sketch -->
+    <title>Facebook</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Landing" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Tablet" transform="translate(-175.000000, -3353.000000)" fill="#FFFFFF" fill-rule="nonzero">
+            <g id="Facebook" transform="translate(175.000000, 3353.000000)">
+                <g id="Layer_1">
+                    <path d="M64,10.6673778 C64,5.0624 58.9397333,0 53.3333333,0 L10.6666667,0 C5.06026667,0 0,5.0624 0,10.6673778 L0,53.3326222 C0,58.9376 5.06026667,64 10.6673778,64 L32,64 L32,39.8222222 L24.1777778,39.8222222 L24.1777778,29.1555556 L32,29.1555556 L32,24.9998222 C32,17.8325333 37.3816889,11.3777778 44,11.3777778 L52.6222222,11.3777778 L52.6222222,22.0444444 L44,22.0444444 C43.0563556,22.0444444 41.9555556,23.1900444 41.9555556,24.9059556 L41.9555556,29.1555556 L52.6222222,29.1555556 L52.6222222,39.8222222 L41.9555556,39.8222222 L41.9555556,64 L53.3333333,64 C58.9397333,64 64,58.9376 64,53.3326222 L64,10.6673778 Z" id="Shape"></path>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>
