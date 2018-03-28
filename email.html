@@ -1,0 +1,466 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+ <head>
+	<meta name="viewport" content="width=device-width" initial-scale="1.0" user-scalable="yes" />
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<style>
+		body {
+			margin: 0;
+			padding: 0;
+		}
+		
+		body,
+		table,
+		td,
+		p,
+		a,
+		li {
+			-webkit-text-size-adjust: 100%;
+			-ms-text-size-adjust: 100%;
+		}
+		
+		a {
+			word-wrap: break-word;
+		}
+		
+		table td {
+			border-collapse: collapse;
+		}
+		
+		table {
+			border-spacing: 0;
+			border-collapse: collapse;
+			mso-table-lspace: 0pt;
+			mso-table-rspace: 0pt;
+		}
+		
+		table,
+		td {
+			mso-table-lspace: 0pt;
+			mso-table-rspace: 0pt;
+		}
+		
+		.ReadMsgBody {
+			width: 100%;
+			background-color: #eeeeee;
+		}
+		
+		.ExternalClass {
+			width: 100%;
+			background-color: #eeeeee;
+		}
+		
+		.ExternalClass,
+		.ExternalClass p,
+		.ExternalClass span,
+		.ExternalClass font,
+		.ExternalClass td,
+		.ExternalClass div {
+			line-height: 100%;
+		}
+		
+		.ExternalClass * {
+			line-height: 100%;
+		}
+		
+		td[class="responsive-cell"] {
+			vertical-align: top;
+		}
+		
+		@media only screen and (max-width: 640px) {
+			table[class="main"],
+			td[class="main"] {
+				width: 100% !important;
+				min-width: 200px !important;
+			}
+			table[class="logo-img"] {
+				width: 100% !important;
+				float: none;
+				margin-bottom: 15px;
+			}
+			table[class="logo-img"] td {
+				text-align: center !important;
+			}
+			table[class="logo-title"] {
+				width: 100% !important;
+				float: none;
+			}
+			table[class="logo-title"] td {
+				text-align: center;
+				height: auto
+			}
+			table[class="logo-title"] h1 {
+				font-size: 24px !important;
+			}
+			table[class="logo-title"] h2 {
+				font-size: 18px !important;
+			}
+			td[class="header-img"] img {
+				width: 100% !important;
+				height: auto !important;
+			}
+			td[class="title"] {
+				padding-left: 25px !important;
+				padding-right: 25px !important;
+			}
+			td[class="title"] h1 {
+				font-size: 24px !important;
+			}
+			td.block-text {
+				padding-left: 25px !important;
+				padding-right: 25px !important;
+			}
+			td[class="block-text"] h2 {
+				font-size: 20px !important;
+				line-height: 170% !important;
+			}
+			td[class="block-text"] p {
+				font-size: 16px !important;
+				line-height: 170% !important;
+			}
+			td[class="block-text"] li {
+				font-size: 16px !important;
+				line-height: 170% !important;
+			}
+			td[class="two-columns"] {
+				padding-left: 25px !important;
+				padding-right: 25px !important;
+			}
+			table[class="text-column"] {
+				width: 100% !important;
+				float: none;
+				margin-bottom: 15px;
+			}
+			td[class="image-caption"] {
+				padding-left: 25px !important;
+				padding-right: 25px !important;
+			}
+			table[class="image-caption-container"] {
+				width: 100% !important;
+			}
+			table[class="image-caption-column"] {
+				width: 100% !important;
+				float: none;
+			}
+			table[class="image-caption-column-text"] {
+				width: 100% !important;
+				float: none;
+			}
+			td[class="image-caption-content"] img {
+				width: 100% !important;
+				height: auto !important;
+			}
+			td[class="image-caption-content"] h2 {
+				font-size: 20px !important;
+				line-height: 170% !important;
+			}
+			td[class="image-caption-content"] p {
+				font-size: 16px !important;
+				line-height: 170% !important;
+			}
+			td[class="image-caption-top-gap"] {
+				height: 15px !important;
+			}
+			td[class="image-caption-bottom-gap"] {
+				height: 5px !important;
+			}
+			td[class="text"] {
+				width: 100% !important;
+			}
+			td[class="text"] p {
+				font-size: 16px !important;
+				line-height: 170% !important;
+			}
+			td[class="text"] h2 {
+				font-size: 20px !important;
+				line-height: 170% !important;
+			}
+			td[class="gap"] {
+				display: none;
+			}
+			td[class="header"] {
+				padding: 25px 25px 25px 25px !important;
+			}
+			td[class="header"] h1 {
+				font-size: 24px !important;
+			}
+			td[class="header"] h2 {
+				font-size: 20px !important;
+			}
+			td[class="footer"] {
+				padding-left: 25px !important;
+				padding-right: 25px !important;
+			}
+			td[class="footer"] p {
+				font-size: 13px !important;
+			}
+			table[class="footer-side"] {
+				width: 100% !important;
+				float: none !important;
+			}
+			td[class="footer-side"] {
+				text-align: center !important;
+			}
+			td[class="social-links"] {
+				text-align: center !important;
+			}
+			table[class="footer-social-icons"] {
+				float: none !important;
+				margin: 0px auto !important;
+			}
+			td[class="social-icon-link"] {
+				padding: 0px 5px !important;
+			}
+			td[class="image"] img {
+				width: 100% !important;
+				height: auto !important;
+			}
+			td[class="image"] {
+				padding-left: 25px !important;
+				padding-right: 25px !important;
+			}
+			td[class="image-full"] img {
+				width: 100% !important;
+				height: auto !important;
+			}
+			td[class="image-full"] {
+				padding-left: 0px !important;
+				padding-right: 0px !important;
+			}
+			td[class="image-group"] img {
+				width: 100% !important;
+				height: auto !important;
+				margin: 15px 0px 15px 0px !important;
+			}
+			td[class="image-group"] {
+				padding-left: 25px !important;
+				padding-right: 25px !important;
+			}
+			table[class="image-in-table"] {
+				width: 100% !important;
+				float: none;
+				margin-bottom: 15px;
+			}
+			table[class="image-in-table"] td {
+				width: 100% !important;
+			}
+			table[class="image-in-table"] img {
+				width: 100% !important;
+				height: auto !important;
+			}
+			td[class="image-text"] {
+				padding-left: 25px !important;
+				padding-right: 25px !important;
+			}
+			td[class="image-text"] p {
+				font-size: 16px !important;
+				line-height: 170% !important;
+			}
+			td[class="divider-simple"] {
+				padding-left: 25px !important;
+				padding-right: 25px !important;
+			}
+			td[class="divider-full"] {
+				padding-left: 0px !important;
+				padding-right: 0px !important;
+			}
+			td[class="social"] {
+				padding-left: 25px !important;
+				padding-right: 25px !important;
+			}
+			table[class="preheader"] {
+				display: none;
+			}
+			td[class="preheader-gap"] {
+				display: none;
+			}
+			td[class="preheader-link"] {
+				display: none;
+			}
+			td[class="preheader-text"] {
+				width: 100%;
+			}
+			td[class="buttons"] {
+				padding-left: 25px !important;
+				padding-right: 25px !important;
+			}
+			table[class="button"] {
+				width: 100% !important;
+				float: none;
+			}
+			td[class="content-buttons"] {
+				padding-left: 25px !important;
+				padding-right: 25px !important;
+			}
+			td[class="buttons-full-width"] {
+				padding-left: 0px !important;
+				padding-right: 0px !important;
+			}
+			td[class="buttons-full-width"] a {
+				/*width:100% !important;*/
+				padding-left: 0px !important;
+				padding-right: 0px !important;
+			}
+			td[class="buttons-full-width"] span {
+				width: 100% !important;
+				padding-left: 0px !important;
+				padding-right: 0px !important;
+			}
+			table[class="content"] {
+				width: 100% !important;
+				float: none !important;
+			}
+			td[class="gallery-image"] {
+				width: 100% !important;
+				padding: 0px !important;
+			}
+			table[class="social"] {
+				width: 100%!important;
+				text-align: center!important;
+			}
+			table[class="links"] {
+				width: 100%!important;
+			}
+			table[class="links"] td {
+				text-align: center!important;
+			}
+			table[class="footer-btn"] {
+				text-align: center!important;
+				width: 100%!important;
+				margin-bottom: 10px;
+			}
+			table[class="footer-btn-wrap"] {
+				margin-bottom: 0px;
+				width: 100%!important;
+			}
+			td[class="head-social"] {
+				width: 100%!important;
+				text-align: center!important;
+				padding-top: 20px;
+			}
+			td[class="head-logo"] {
+				width: 100%!important;
+				text-align: center!important;
+			}
+			tr[class="header-nav"] {
+				display: none;
+			}
+			td[class="responsive-cell"] {
+				display: block;
+			}
+			td[class="image-caption"] {
+				padding: 0px!important;
+			}
+		}
+	</style>
+</head>
+
+<body>
+	<table width="100%" border="0" cellspacing="0" cellpadding="0" style="background: #eeeeee; font-family: Arial, 'Helvetica Neue', Helvetica, sans-serif; font-size: 12px; line-height: 21px; color: #000000;">
+		<tbody>
+			<tr>
+				<td width="100%" id="primary" class="main demo" align="center" valign="top">
+					<table width="640" class="main" cellspacing="0" cellpadding="0" border="0" align="center" style="background-color: #000000; display: table;" data-type="image" id="8f43782b-3484-2be3-ef09-8ebcdf4f793d">
+						<tbody>
+							<tr>
+								<td align="center" style="padding: 10px 0px;" class="image"><img src="http://artcom.um.edu.mx/gain/images/GainMX.jpg" alt="GAIN México" height="80" /></td>
+							</tr>
+						</tbody>
+					</table>
+					<table width="640" class="main" cellspacing="0" cellpadding="0" border="0" align="center" style="background-color: #FFFFFF; display: table;" data-type="image" id="ce94bddc-a1b1-4b63-20f5-ddb9cb5e8042">
+						<tbody>
+							<tr>
+								<td align="center" style="padding: 0;" class="image"><img border="0" align="one_image" alt="Misión creativa" src="http://artcom.um.edu.mx/gain/images/mision_creativa.jpg" width="640" data-maxwidth="640" id="5bc04f6c-fe02-6787-eaf9-7ba259ce97b2" tabindex="0" /></td>
+							</tr>
+						</tbody>
+					</table>
+					<table width="640" class="main" cellspacing="0" cellpadding="0" border="0" align="center" style="background-color: #ffffff; display: table;" data-type="title" id="078b1138-02cb-e579-0dc4-bfaf38c79e07">
+						<tbody>
+							<tr style="height: 48px;">
+								<td align="left" class="title textFix" style="padding: 5px 50px; font-family: Arial, 'Helvetica Neue', Helvetica, sans-serif; font-size: 12px; line-height: 16px; outline: none; height: 48px;">
+									<h1 style="text-align: center;">Hola {{first_name}},</h1>
+								</td>
+							</tr>
+						</tbody>
+					</table>
+					<table width="640" class="main" cellspacing="0" cellpadding="0" border="0" style="background-color: #ffffff; display: table;" align="center" data-type="text-block" id="8e502b7d-0861-4ff6-d50d-6145cbbbfdff">
+						<tbody>
+							<tr>
+								<td class="block-text" data-clonable="true" align="left" style="padding: 10px 50px 10px 50px;">
+									<div style="margin: 0px 0px 10px; font-family: Arial, 'Helvetica Neue', Helvetica, sans-serif; font-size: 12px; line-height: 16px; color: #000000; outline: none;" class="textFix">
+										<div style="margin: 0px 0px 10px; font-family: Arial, 'Helvetica Neue', Helvetica, sans-serif; font-size: 12px; line-height: 16px; color: #000000; outline: none;" class="textFix">
+											<h2 style="margin: 0px 0px 10px; font-family: Arial, 'Helvetica Neue', Helvetica, sans-serif; font-size: 12px; line-height: 16px; color: #000000; outline: none;" class="textFix"><span style="font-size: 14pt;">Sólo te hacen falta un par de pasos,
+&nbsp;</span></h2>
+										</div>
+									</div>
+									<div style="margin: 0px 0px 10px; font-family: Arial, 'Helvetica Neue', Helvetica, sans-serif; font-size: 12px; line-height: 16px; color: #000000; outline: none;" class="textFix">
+										<div style="margin: 0px 0px 10px; font-family: Arial, 'Helvetica Neue', Helvetica, sans-serif; font-size: 12px; line-height: 16px; color: #000000; outline: none;" class="textFix">
+											<p><span style="font-size: 14pt;">para completar tu registro al GAINmx<br><br>
+ 
+<strong>1)</strong> REALIZAR PAGO<br><br>
+
+<strong>Caja UM</strong><br>
+Especificar que es para el Congreso GAIN MX  con número de cuenta 1.01.2.06.08. 1.2.01<br><br>
+
+<strong>Pago en la facultad</strong><br>
+Con Dulce Monjaras, en efectivo.<br><br>
+
+<strong>Transferencia bancaria</strong><br>
+BANORTE: 072597000610151165<br>
+SCOTIABANK: 044597253000002052<br><br>
+
+<strong>Deposito bancario</strong><br>
+BANORTE: 0061015116<br>
+SCOTIABANK: 25300000205</span></p>
+										</div>
+									</div>
+								</td>
+							</tr>
+							<tr>
+								<td style="padding: 0 18px 18px 18px;" valign="top" align="center" class="mcnButtonBlockInner">
+									<table border="0" cellpadding="0" cellspacing="0" class="mcnButtonContentContainer" style="border-collapse: separate !important; border-radius: 3px; background-color: #02b7c8;">
+										<tbody>
+											<tr>
+												<td align="center" valign="middle" class="mcnButtonContent" style="font-family: Arial; font-size:16px; padding:20px;"><a class="mcnButton " title="Pago en línea" href="#" target="_blank" style="font-weight: bold; letter-spacing: normal; line-height: 100%; text-align: center; text-decoration: none; color: #ffffff;">Pago en línea</a></td>
+											</tr>
+										</tbody>
+									</table>
+									<p></p>
+									<p style="font-size: 14pt; text-align: left;"><br><span><strong>2)</strong> ENVIAR TU COMPROBANTE<br><br>
+
+Escanea o toma una fotografía al comprobante de pago y envíalo  al correo <a href="mailto:gain@um.edu.mx">gain@um.edu.mx</a></span></p>
+								</td>
+							</tr>
+						</tbody>
+					</table>
+					<table class="main" align="center" width="640" cellspacing="0" cellpadding="0" border="0" style="background-color: #ebedef; display: table;" data-type="social-links" id="769f28d3-a29d-1c4f-47a4-3c0c21b4aa9d" data-color="true">
+						<tbody>
+							<tr>
+								<td class="social" align="center" style="padding: 15px 50px 15px 50px;">
+									<a href="https://facebook.com/artcomum/" style="border: none; text-decoration: none;" class="facebook" target="_blank"> <img border="0" src="https://yubo.mx/img/facebook-icon.png" width="35" height="35" alt="Facebook" /> </a>
+									<a href="#" style="border: none; text-decoration: none;" class="twitter" target="_blank"> <img border="0" src="https://yubo.mx/img/Twitter-icon.png" width="35" height="35" alt="Whatsapp" style="padding: 0 0 0 20px;" />&nbsp;</a>
+								</td>
+							</tr>
+						</tbody>
+					</table>
+
+					<table width="640" class="main" cellspacing="0" cellpadding="0" border="0" style="background-color: #2a2a2a; display: table;" align="center" data-type="text-block" id="867565e7-6498-a748-b20f-d134960798b8" data-color="true">
+						<tbody>
+							<tr>
+								<td class="block-text" data-clonable="true" align="left" style="padding: 10px 50px 10px 50px;">
+									<div style="margin: 0px 0px 10px; font-family: Arial, 'Helvetica Neue', Helvetica, sans-serif; font-size: 12px; line-height: 16px; outline: none;" class="textFix">
+										<p><span style="text-decoration: underline;"><span style="color: #ffffff;"><a style="color: #ffffff; text-decoration: underline;" title="Darme de baja de esta lista" href="{{{unsubscribe_link}}}">Darme de baja de esta</a>&nbsp;&nbsp;</span></span><span style="color: #ffffff;">|&nbsp;</span> <span style="color: #ffffff;"><a style="color: #ffffff; text-decoration: underline;" href="{{{online_link}}}">Ver este email en el navegador</a>&nbsp;</span></p>
+										<p><span style="color: #ffffff;">&copy; Todos los derechos reservados por La Universidad de Montemorelos 2018</span></p>
+									</div>
+								</td>
+							</tr>
+						</tbody>
+					</table>
+				</td>
+			</tr>
+		</tbody>
+	</table>
+</body>
+</html>

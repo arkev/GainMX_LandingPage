@@ -1600,6 +1600,32 @@
 		"sM": 0,
 		"sU": 0
 		},
+	"\/email.html": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/email.html",
+		"oF": 0
+		},
+	"\/images\/Abel_Marquez.jpg": {
+		"ft": 16384,
+		"iS": 40307,
+		"oA": 0,
+		"oAP": "\/images\/Abel_Marquez.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
+	"\/images\/Allen_Zapien_Growth_Hacker.jpg": {
+		"ft": 16384,
+		"iS": 23805,
+		"oA": 0,
+		"oAP": "\/images\/Allen_Zapien_Growth_Hacker.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
 	"\/images\/bkg-gain.jpg": {
 		"ft": 16384,
 		"iS": 206840,
@@ -1609,6 +1635,26 @@
 		"oIPL": 0,
 		"opt": 0,
 		"q": 100
+		},
+	"\/images\/davd_gutierrez.jpg": {
+		"ft": 16384,
+		"iS": 21257,
+		"oA": 0,
+		"oAP": "\/images\/davd_gutierrez.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
+	"\/images\/ELPROFE.svg": {
+		"ft": 2097152,
+		"miP": 0,
+		"oA": 2,
+		"oAP": "\/images\/ELPROFE.svg",
+		"oF": 0,
+		"opt": 0,
+		"plM": 3758088159,
+		"prP": 0
 		},
 	"\/images\/Facebook.svg": {
 		"ft": 2097152,
@@ -1620,6 +1666,26 @@
 		"plM": 3758088159,
 		"prP": 0
 		},
+	"\/images\/Felipe_Lemos.jpg": {
+		"ft": 16384,
+		"iS": 10914,
+		"oA": 0,
+		"oAP": "\/images\/Felipe_Lemos.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
+	"\/images\/GainMX.jpg": {
+		"ft": 16384,
+		"iS": 12874,
+		"oA": 0,
+		"oAP": "\/images\/GainMX.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
 	"\/images\/GainMX.svg": {
 		"ft": 2097152,
 		"miP": 0,
@@ -1629,6 +1695,26 @@
 		"opt": 0,
 		"plM": 3758088159,
 		"prP": 0
+		},
+	"\/images\/Geoffrey_Porto.jpg": {
+		"ft": 16384,
+		"iS": 46145,
+		"oA": 0,
+		"oAP": "\/images\/Geoffrey_Porto.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
+	"\/images\/Harvey_Alferez.jpg": {
+		"ft": 16384,
+		"iS": 24333,
+		"oA": 0,
+		"oAP": "\/images\/Harvey_Alferez.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
 		},
 	"\/images\/Iglesia_Adventista_Del_Septimo_Dia.svg": {
 		"ft": 2097152,
@@ -1660,15 +1746,64 @@
 		"plM": 3758088159,
 		"prP": 0
 		},
-	"\/images\/Pigmentum.png": {
-		"ft": 32768,
-		"iS": 6119,
+	"\/images\/Jasson_Hernandez.jpg": {
+		"ft": 16384,
+		"iS": 5486,
 		"oA": 0,
-		"oAP": "\/images\/Pigmentum.png",
+		"oAP": "\/images\/Jasson_Hernandez.jpg",
 		"oF": 0,
 		"oIPL": 0,
 		"opt": 0,
-		"oT": 1,
+		"q": 100
+		},
+	"\/images\/LA_CHIAPANECA.svg": {
+		"ft": 2097152,
+		"miP": 0,
+		"oA": 2,
+		"oAP": "\/images\/LA_CHIAPANECA.svg",
+		"oF": 0,
+		"opt": 0,
+		"plM": 3758088159,
+		"prP": 0
+		},
+	"\/images\/Liz_Elejalde.jpg": {
+		"ft": 16384,
+		"iS": 59450,
+		"oA": 0,
+		"oAP": "\/images\/Liz_Elejalde.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
+	"\/images\/mision_creativa.jpg": {
+		"ft": 16384,
+		"iS": 108921,
+		"oA": 0,
+		"oAP": "\/images\/mision_creativa.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
+	"\/images\/Pigmentum.svg": {
+		"ft": 2097152,
+		"miP": 0,
+		"oA": 2,
+		"oAP": "\/images\/Pigmentum.svg",
+		"oF": 0,
+		"opt": 0,
+		"plM": 3758088159,
+		"prP": 0
+		},
+	"\/images\/Rafael_Rossi.jpg": {
+		"ft": 16384,
+		"iS": 11042,
+		"oA": 0,
+		"oAP": "\/images\/Rafael_Rossi.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
 		"q": 100
 		},
 	"\/images\/Twitter.svg": {
@@ -1696,6 +1831,26 @@
 		"oA": 2,
 		"oAP": "\/index.html",
 		"oF": 0
+		},
+	"\/js\/programacion-min.js": {
+		"ft": 64,
+		"ma": 0,
+		"mi": 1,
+		"oA": 0,
+		"oAP": "\/js\/programacion-min-min.js",
+		"oF": 0,
+		"sC": 3,
+		"tS": 0
+		},
+	"\/js\/programacion.js": {
+		"ft": 64,
+		"ma": 0,
+		"mi": 1,
+		"oA": 0,
+		"oAP": "\/js\/programacion-min.js",
+		"oF": 0,
+		"sC": 0,
+		"tS": 0
 		}
 	},
 "hooks": [

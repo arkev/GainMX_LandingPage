@@ -1,22 +1,25 @@
-@import url('https://fonts.googleapis.com/css?family=Montserrat:100,100i,200,300, 400,500,700,800,900');
+@import url('https://fonts.googleapis.com/css?family=Montserrat:100,100i,300, 400,500,700,800');
 
 //Variables
 @amarillo: #FF9A1B;
+@rojo:#FF2610;
 @tablet: 768px;
 @laptop: 1024px;
 @desktop: 1140px;
 @bigScreen: 1400px;
 /* !Media Querys */
-@mqTablet:      ~"only screen and (min-width: @tablet)";
-@mqlaptop:      ~"only screen and (min-width: @laptop)";
-@mqDesktop:     ~"only screen and (min-width: @desktop)";
-@mqBigScreen:   ~"only screen and (min-width: @bigScreen)";
+@mqTablet:      ~"only screen and (min-width:" ~"@{tablet})";
+@mqLaptop:      ~"only screen and (min-width:" ~"@{laptop})";
+@mqDesktop:     ~"only screen and (min-width:" ~"@{desktop})";
+@mqBigScreen:   ~"only screen and (min-width:" ~"@{bigScreen})";
 
 //Mixins
-.responsiveFont(@base: 8vw,@anchoMaximo: @desktop,@tope: 3rem) {
-    font-size: @base;
-    @media (min-width: @anchoMaximo) {
-        font-size: @tope;
+.responsiveFont(@sizeValue,@anchoMaximo) {
+    @vwValue: @sizeValue;
+    @tope:(@anchoMaximo/100)*@sizeValue;
+    font-size: ~"@{vwValue}vw";
+    @media (min-width: ~"@{anchoMaximo}px") {
+        font-size: ~"@{tope}px"; 
     }
 }
 
@@ -26,6 +29,36 @@
     padding: .5em 1em;
     border: @anchoDeLinea solid @colorDeLinea;
     color: @color;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+.thin(@style:normal){
+    font-weight: 100;
+    font-style:@style;
+}
+.light(){
+    font-weight: 300;
+}
+.regular(){
+    font-weight: 400;
+}
+.medium(){
+    font-weight: 500;
+}
+.bold(){
+    font-weight: 700;
+}
+.extraBold(){
+    font-weight: 800;
+}
+
+.h2UnderLine(){
+        .responsiveFont(7,1280);
+        .extraBold();
+        margin-bottom: 3px;
+        border-bottom: 5px solid @rojo;
+        display: initial;
 }
 
 //General
@@ -40,10 +73,14 @@ body {
 }
 
 //Especísicos
+.container{
+    width: 90%;
+    max-width: @bigScreen;
+}
+
 #principal {
     background: url(../images/bkg-gain.jpg) no-repeat center center;
     background-size: cover;
-    height: 100vh;
     width: 100%;
     display: block;
 }
@@ -66,28 +103,227 @@ body {
         margin-top: 52vh;
     }
     h1 {
-        .responsiveFont(8vw,1280px,5rem);
+        .responsiveFont(8,900);
         margin-bottom: .2em;
         span {
-            font-weight: 100;
-            font-style: italic;
+            .thin(italic);
         }
     }
     h2 {
-        font-weight: 400;
+        .regular();
         margin: 0 auto .2em;
-        .responsiveFont(7vw,1280px,4rem);
+        .responsiveFont(7,900);
         span {
-            font-weight: 100;
+            .thin();
         }
     }
     h3 {
-        font-weight: 500;
+        .medium();
         margin: 0 auto .8em;
-        .responsiveFont(6vw,1280px,3rem);
+        .responsiveFont(6,900);
     }
-    button {
+    .button {
         .button();
-        .responsiveFont(4vw,@tablet,1.8rem);
+        .responsiveFont(4,900);
     }
+}
+
+#countDown{
+    text-align: center;
+    color: white;
+    background: @rojo;
+    padding: 50px 0;
+    h2{
+        .responsiveFont(5,1280);
+        .medium();
+        margin-top: 0;
+    }
+    .button{
+        .button(@rojo, 10px, 3px, white, white);
+        .responsiveFont(4,768);
+    }
+    #cuentaRegresiva{
+        .responsiveFont(7,1280);
+        .bold();
+        margin: 1em auto;
+        letter-spacing: 6px;
+    }
+}
+
+#evento{
+    background:white;
+    padding: 50px 0;
+    text-align: left;
+    h2{
+        .h2UnderLine();
+    }
+    p{
+        .responsiveFont(4,600);
+        .regular();
+        margin-top:2rem;
+        line-height: 1.3em;
+    }
+}
+
+#speackers{
+    background:white;
+    text-align: center;
+    padding-bottom: 50px;
+    h2{
+        .h2UnderLine();
+        text-align: left;
+        display: table;
+    }
+    img{
+        margin-top: 2em;
+        border-radius: 50%;
+        border: 4px solid white;
+        box-shadow: 0 0 12px grey;
+        filter: grayscale(100%);
+    }
+    h3{
+        .responsiveFont(5,600);
+        .bold();
+        margin: 15px auto 10px;
+        border-bottom: 3px solid @rojo;
+        display: inline-block;
+    }
+    p{
+        .responsiveFont(3.5,500);
+        .regular();
+        line-height: 1.3em;
+    }
+    span{
+        .responsiveFont(4,500);
+        .medium();
+        line-height: 1.3em;
+        color: @rojo;
+        margin-bottom: 2em;
+    }
+}
+
+#patrocinadores{
+        color: white;
+        background: @amarillo;
+        padding: 2rem 0;
+    h2{
+        .responsiveFont(6,768);
+        .medium(); 
+        margin:0 0 .5em;
+    }
+    p{
+        .responsiveFont(3.5,600);
+    }
+    img{
+        margin:0 1rem 2rem 0;
+        width: 32px;
+        @media @mqTablet{
+            width: 48px;
+        }
+        @media @mqLaptop{
+            width: 64px;
+        }
+    }
+    .button{
+        .button(@amarillo, 10px, 3px, white, white);
+        .responsiveFont(4,600);
+        margin-top: 1em;
+        display: table;
+    }
+    #marcas{
+        margin-top: 2rem;
+        img{
+            width: 100%;
+            margin: 0 0 2rem 0;
+        }
+    }
+}
+
+#pasos{
+    background: @rojo;
+    color: white;
+    padding: 50px 0;
+    & > div{
+        max-width: 900px;
+    }
+    h2{
+        text-align: center;
+        .responsiveFont(6,768);
+        .bold(); 
+        margin:0 0 .5em;
+    }
+    .circulo{
+        display: inline-block;
+        border-radius: 50%;
+        text-align: center;
+        color: black;
+        padding: 5px;
+        background: white;
+        width: 58px;
+        height: 58px;
+        line-height: 1em;
+        margin-bottom: 1rem;
+        .responsiveFont(18,320);
+        .bold();
+        @media @mqTablet{
+            font-size: 22px;
+            width: 20px;
+            height: 20px;
+        }
+        @media @mqLaptop{
+            font-size: 34px;
+            width: 32px;
+            height: 32px;
+        }
+    }
+    p.box{
+        display: inline-block;
+        margin-left: 1rem;
+        .responsiveFont(4.5,768);
+        .regular();
+        @media @mqTablet{
+            font-size: 13px;
+        }
+        @media @mqLaptop{
+            font-size: 16px;
+        }
+        span{
+            .bold();
+        }
+    }
+    form{
+        margin: 2rem auto 0;
+        max-width: 900px;
+        label, input{
+            width: 100%;
+        }
+        label{
+            .responsiveFont(3.4,768);
+            margin-bottom: .5em;
+            margin: .5em 0;
+            display: block;
+        }
+        input{
+            height: 57px;
+            border-radius: 10px;
+            border: 0;
+            padding: 8px;
+            box-sizing: border-box;
+            font-size: 1.3rem;
+        }
+        .button {
+        .button();
+        .responsiveFont(4,768);
+        margin-top: 2rem;
+    }
+    }
+}
+
+footer{
+    font-size: 1rem;
+    color:white;
+    letter-spacing: 0;
+    text-align: center;
+    line-height: 30px;
+    padding: 2rem;
 }

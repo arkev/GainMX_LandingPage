@@ -1,41 +1,359 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no">
+    <meta name="description" content=">El GainMX es el encuentro que involucra la participación de alumnos de comunicación y áreas relacionadas a la tecnología, diseño y mercadotecnia así como profesionales de comunicación que actúan en la Iglesia Adventista del Séptimo Día">
     <title>GainMX 2018</title>
     <link rel="stylesheet" href="bower_components/normalize-css/normalize.css">
     <link rel="stylesheet" href="bower_components/flexboxgrid/dist/flexboxgrid.min.css">
     <link rel="stylesheet" href="css/styles.css">
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-116335977-1"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+
+        function gtag() {
+            dataLayer.push(arguments);
+        }
+        gtag('js', new Date());
+
+        gtag('config', 'UA-116335977-1');
+    </script>
+
 </head>
 
 <body>
+
     <!-- #Principal -->
     <seccion id="principal">
-        <!-- #header -->
-        <div class="row center-xs" id="header">
-            <div class="col-xs-6 col-sm-4">
-                <img src="images/Universidad_de_Montemorelos.svg" alt="Universidad de Montemorelos" class="box">
+        <div class="container">
+            <!-- #header -->
+            <div class="row center-xs" id="header">
+                <div class="col-xs-6 col-sm-4">
+                    <img src="images/Universidad_de_Montemorelos.svg" alt="Universidad de Montemorelos" class="box">
+                </div>
+                <div class="col-xs-6 col-sm-offset-4 col-sm-4">
+                    <img src="images/Iglesia_Adventista_Del_Septimo_Dia.svg" alt="Iglesia Adventista del Séptimo Día" class="box">
+                </div>
             </div>
-            <div class="col-xs-6 col-sm-offset-4 col-sm-4">
-                <img src="images/Iglesia_Adventista_Del_Septimo_Dia.svg" alt="Iglesia Adventista del Séptimo Día" class="box">
-            </div>
+            <!-- #datos -->
+            <section id="datos" class="row center-xs">
+                <div class="col-xs-12">
+                    <img src="images/GainMX.svg" class="box" alt="Gain México" width="100%">
+                    <h1 class="box">Misión <span> creativa</span></h1>
+                    <h2 class="box">13 <span>y</span> 14 de <span>abril</span>, 2018</h2>
+                    <h3 class="box">Costo $600</h3>
+                    <a class="box button" href="#agile-form">¡Quiero asistir!</a>
+                </div>
+            </section>
         </div>
-        <!-- #datos -->
-        <section id="datos" class="row center-xs">
-            <div class="col-xs-12">
-                <img src="images/GainMX.svg" class="box" alt="Gain México" width="100%">
-                <h1 class="box">Misión <span> creativa</span></h1>
-                <h2 class="box">13 <span>y</span> 14 de <span>abril</span>, 2018</h2>
-                <h3 class="box">Costo $600</h3>
-                <button class="box">¡Quiero asistir!</button>
-            </div>
-        </section>
-
     </seccion>
     <!-- /#Principal -->
 
+    <!-- #countDown -->
+    <section id="countDown">
+        <div class="container">
+            <div class="row middle-xs">
+                <div class="col-xs-12 col-sm-6">
+                    <h2 class="box">Días para que inicie Gain MX</h2>
+                    <a class="box button" href="#agile-form">¡Quiero asistir!</a>
+                </div>
+                <div class="col-xs-12 col-sm-6">
+                    <div class="box" id="cuentaRegresiva"></div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- /#countDown -->
 
+    <!-- #evento -->
+    <section id="evento">
+        <div class="container">
+            <div class="row">
+                <div class="col-xs-12">
+                    <h2 class="box">El evento</h2>
+                    <p class="box">El GainMX es el encuentro que reune a estudiantes, entusiastas y profesionales de la comunicación, tecnología, diseño y mercadotecnia de la Iglesia Adventista del Séptimo Día. El evento tiene como objetivo posibilitar el intercambio de experiencias y discutir formas de utilizar la tecnología para iniciativas evangelizadoras de una forma creativa.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- /#evento -->
 
+    <!-- #speakers -->
+    <section id="speackers">
+        <div class="container">
+            <div class="row">
+                <div class="col-xs-12">
+                    <h2 class="box start-xs">Speakers</h2>
+                </div>
+
+                <!-- Ponente 1 -->
+                <div class="col-xs-6 col-sm-4 col-md-3 col-lg-2">
+                    <img class="box" src="images/Abel_Marquez.jpg" width="90%" alt="Abel Márquez">
+                    <h3 class="box">Abel Márquez</h3>
+                    <p class="box">Director de comunicación de la división Interamericana de la Iglesia Adventista del Séptimo Día</p>
+                    <span>Miami, FL.</span>
+                </div>
+
+                <!-- Ponente 2 -->
+                <div class="col-xs-6 col-sm-4 col-md-3 col-lg-2">
+                    <img class="box" src="images/Rafael_Rossi.jpg" width="90%" alt="Abel Márquez">
+                    <h3 class="box">Rafael Rossiz</h3>
+                    <p class="box">Director de Comunicación de la División Sudamericana de la Iglesia Adventista del Séptimo Día</p>
+                    <span>Brasil</span>
+                </div>
+
+                <!-- Ponente 3 -->
+                <div class="col-xs-6 col-sm-4 col-md-3 col-lg-2">
+                    <img class="box" src="images/Jasson_Hernandez.jpg" width="90%" alt="Jasson Hernández">
+                    <h3 class="box">Jasson Hernández</h3>
+                    <p class="box">Productor y post-productor de proyectos televisivos y eventos en vivo</p>
+                    <span>Montemorelos</span>
+                </div>
+
+                <!-- Ponente 4 -->
+                <div class="col-xs-6 col-sm-4 col-md-3 col-lg-2">
+                    <img class="box" src="images/Felipe_Lemos.jpg" width="90%" alt="Felipe Lemos">
+                    <h3 class="box">Felipe Lemos</h3>
+                    <p class="box">Asesor de Comunicación de la División Sudamericana de la Iglesia Adventista del Séptimo Día </p>
+                    <span>Brasil</span>
+                </div>
+
+                <!-- Ponente 5 -->
+                <div class="col-xs-6 col-sm-4 col-md-3 col-lg-2">
+                    <img class="box" src="images/davd_gutierrez.jpg" width="90%" alt="David Gutiérrez">
+                    <h3 class="box">David Gutiérrez </h3>
+                    <p class="box">UI / UX Designer y Co-Founder en Nett</p>
+                    <span>Monterrey, México</span>
+                </div>
+
+                <!-- Ponente 6 -->
+                <div class="col-xs-6 col-sm-4 col-md-3 col-lg-2">
+                    <img class="box" src="images/Harvey_Alferez.jpg" width="90%" alt="Harvey Alferez">
+                    <h3 class="box">Harvey Alferez</h3>
+                    <p class="box">Docente e investigador en la Universidad de Montemorelos</p>
+                    <span>México</span>
+                </div>
+
+                <!-- Ponente 7-->
+                <div class="col-xs-6 col-sm-4 col-md-3 col-lg-2">
+                    <img class="box" src="images/Liz_Elejalde.jpg" width="90%" alt="Lizbeth Elejalde">
+                    <h3 class="box">Lizbeth Elejalde</h3>
+                    <p class="box">Docente en la Universidad de Montemorelos </p>
+                    <span>México</span>
+                </div>
+
+                <!-- Ponente 8 -->
+                <div class="col-xs-6 col-sm-4 col-md-3 col-lg-2">
+                    <img class="box" src="images/Geoffrey_Porto.jpg" width="90%" alt="Geoffrey Porto">
+                    <h3 class="box">Geoffrey Porto</h3>
+                    <p class="box">Software Architect Engineer en Banregio </p>
+                    <span>Monterrey, México</span>
+                </div>
+
+                <!-- Ponente 9 -->
+                <div class="col-xs-6 col-sm-4 col-md-3 col-lg-2">
+                    <img class="box" src="images/Allen_Zapien_Growth_Hacker.jpg" width="90%" alt="Kevin Zapien">
+                    <h3 class="box">Kevin Zapien</h3>
+                    <p class="box">Growth Hacker, diseñador UX/UI y docente en la Universidad de Montemorelos</p>
+                    <span>México</span>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- /#speackers -->
+
+    <!-- #patrocinadores -->
+    <section id="patrocinadores">
+        <div class="container">
+            <div class="row">
+                <div class="col-xs-12 col-sm-6">
+                    <h2 class="box">Minuto a minuto</h2>
+                    <p class="box">Los detalles de #GainMX en redes sociales</p>
+                    <img src="images/Twitter.svg" alt="Twitter" class="box">
+                    <img src="images/Facebook.svg" alt="Facebook" class="box">
+                    <img src="images/Instagram.svg" alt="Instagram" class="box">
+                </div>
+                <div class="col-xs-12 col-sm-6">
+                    <h2 class="box">Patrocinadores</h2>
+                    <p class="box">Gracias al apoyo de estas estupendas marcas el GainMX 2018 es una realidad.</p>
+                    <a class="box button" href="mailto:gain@um.edu.mx">¡Quiero ser patrocinador!</a>
+                </div>
+                <div class="col-xs-12" id="marcas">
+                    <div class="box">
+                        <div class="row middle-xs center-xs">
+                            <div class="col-xs-6 col-sm-4 col-md-3 col-lg-2">
+                                <img src="images/Pigmentum.svg" width="100%" alt="Pigmentum" class="box">
+                            </div>
+                            <div class="col-xs-6 col-sm-4 col-md-3 col-lg-2">
+                                <img src="images/Infortec.svg" width="100%" alt="Infortec" class="box">
+                            </div>
+                            <div class="col-xs-6 col-sm-4 col-md-3 col-lg-2">
+                                <img src="images/ELPROFE.svg" width="100%" alt="El Profe" class="box">
+                            </div>
+                            <div class="col-xs-6 col-sm-4 col-md-3 col-lg-2">
+                                <img src="images/LA_CHIAPANECA.svg" width="100%" alt="La Chiapaneca" class="box">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- /#patrocinadores -->
+
+    <!-- #pasos -->
+    <section id="pasos">
+        <div class="container">
+            <div class="row start-xs">
+                <div class="col-xs-12">
+                    <h2 class="box">Pasos de inscripción</h2>
+                </div>
+                <div class="col-xs-12 col-sm-4" id="paso1">
+                    <div class="box circulo">1</div>
+                    <p class="box">
+                        Paso 1 <br>
+                        <span>Llenar formulario</span>
+                    </p>
+                </div>
+                <div class="col-xs-12 col-sm-4" id="paso2">
+                    <div class="box circulo">2</div>
+                    <p class="box">
+                        Paso 2 <br>
+                        <span>Realizar pago</span>
+                    </p>
+                </div>
+                <div class="col-xs-12 col-sm-4" id="paso3">
+                    <div class="box circulo">3</div>
+                    <p class="box">
+                        Paso 3 <br>
+                        <span>Manda tu comprobante</span>
+                    </p>
+                </div>
+            </div>
+            <form class="row" action="https://gain.agilecrm.com/formsubmit" id="agile-form" method="GET">
+                <div style="display: none; height: 0px; width: 0px;">
+                    <input type="hidden" id="_agile_form_name" name="_agile_form_name" value="Gain">
+                    <input type="hidden" id="_agile_domain" name="_agile_domain" value="gain">
+                    <input type="hidden" id="_agile_api" name="_agile_api" value="98b69dka58pfg44p08hf882hir">
+                    <input type="hidden" id="_agile_redirect_url" name="_agile_redirect_url" value="#">
+                    <input type="hidden" id="_agile_confirmation_msg" name="_agile_confirmation_msg" value="Genial! Gracias por llenar el formulario en breve nos pondremos en contacto contigo">
+                    <input type="hidden" id="_agile_form_id_tags" name="tags" value="gain">
+                    <input type="hidden" id="_agile_form_id" name="_agile_form_id" value="5706803308396544">
+                </div>
+                <div class="col-xs-12 col-sm-6">
+                    <label for="nombre" class="box">Nombre</label>
+                    <input id="nombre" type="text" class="box" name="first_name" required>
+                </div>
+                <div class="col-xs-12 col-sm-6">
+                    <label for="apellido" class="box">Apellido</label>
+                    <input type="text" class="box" id="apellido" name="last_name" required>
+                </div>
+                <div class="col-xs-12 col-sm-6">
+                    <label for="email" class="box">Email</label>
+                    <input type="email" id="email" name="email" class="box">
+                </div>
+                <div class="col-xs-12 col-sm-6">
+                    <label for="tel" class="box">Teléfono fijo o  móvil</label>
+                    <input type="tel" id="tel" name="phone" class="box" required>
+                </div>
+                <div class="col-xs-12">
+                    <button type="submit" class="box button">Enviar datos</button>
+                </div>
+                <div class="col-xs-12">
+                    <span class="box" id="agile-error-msg"></span>
+                </div>
+            </form>
+        </div>
+    </section>
+    <!-- /#pasos -->
+
+    <footer class="row">
+        <div class="col-xd-12">
+            <p class="box">© Copyright 2018 Todos los derechos reservados | La Universidad de Montemorelos es una institución privada de educación superior que pertenece a la Iglesia Adventista del Séptimo Día. </p>
+        </div>
+    </footer>
+
+    <!-- agile -->
+    <script id="_agile_min_js" async type="text/javascript" src="https://gain.agilecrm.com/stats/min/agile-min.js">
+    </script>
+    <script type="text/javascript">
+        var Agile_API = Agile_API || {};
+        Agile_API.on_after_load = function() {
+            _agile.set_account('98b69dka58pfg44p08hf882hir', 'gain');
+            _agile.track_page_view();
+            _agile_execute_web_rules();
+        };
+    </script>
+    <!-- /agile -->
+
+    <!-- Formulario agile -->
+    <script type="text/javascript">
+        (function(a) {
+            var b = a.onload,
+                p = true;
+            isCaptcha = false;
+            if (p) {
+                a.onload = "function" != typeof b ? function() {
+                    try {
+                        _agile_load_form_fields()
+                    } catch (a) {}
+                } : function() {
+                    b();
+                    try {
+                        _agile_load_form_fields()
+                    } catch (a) {}
+                }
+            };
+            var formLen = document.forms.length;
+            for (i = 0; i < formLen; i++) {
+                if (document.forms.item(i).getAttribute("id") == "agile-form") {
+                    a.document.forms.item(i).onsubmit = function(a) {
+                        a.preventDefault();
+                        try {
+                            _agile_synch_form_v5(this)
+                        } catch (b) {
+                            this.submit()
+                        }
+                    }
+                }
+            }
+        })(window);
+    </script>
+    <!-- /Formulario agile -->
     <script src="bower_components/jquery/dist/jquery.min.js"></script>
+    <script src="js/programacion-min.js"></script>
+
+    <!-- Facebook Pixel Code -->
+    <script>
+        ! function(f, b, e, v, n, t, s) {
+            if (f.fbq) return;
+            n = f.fbq = function() {
+                n.callMethod ?
+                    n.callMethod.apply(n, arguments) : n.queue.push(arguments)
+            };
+            if (!f._fbq) f._fbq = n;
+            n.push = n;
+            n.loaded = !0;
+            n.version = '2.0';
+            n.queue = [];
+            t = b.createElement(e);
+            t.async = !0;
+            t.src = v;
+            s = b.getElementsByTagName(e)[0];
+            s.parentNode.insertBefore(t, s)
+        }(window, document, 'script',
+            'https://connect.facebook.net/en_US/fbevents.js');
+        fbq('init', '103621686665965');
+        fbq('track', 'PageView');
+    </script>
+    <noscript><img height="1" width="1" style="display:none"
+  src="https://www.facebook.com/tr?id=103621686665965&ev=PageView&noscript=1"
+/></noscript>
+    <!-- End Facebook Pixel Code -->
+
 </body>
+
 </html>
