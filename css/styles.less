@@ -2,28 +2,34 @@
 
 //Variables
 @amarillo: #FF9A1B;
-@rojo:#FF2610;
+@rojo: #FF2610;
 @tablet: 768px;
 @laptop: 1024px;
 @desktop: 1140px;
 @bigScreen: 1400px;
 /* !Media Querys */
-@mqTablet:      ~"only screen and (min-width:" ~"@{tablet})";
-@mqLaptop:      ~"only screen and (min-width:" ~"@{laptop})";
-@mqDesktop:     ~"only screen and (min-width:" ~"@{desktop})";
-@mqBigScreen:   ~"only screen and (min-width:" ~"@{bigScreen})";
+
+@mqTablet: ~ "only screen and (min-width:" ~ "@{tablet})";
+@mqLaptop: ~ "only screen and (min-width:" ~ "@{laptop})";
+@mqDesktop: ~ "only screen and (min-width:" ~ "@{desktop})";
+@mqBigScreen: ~ "only screen and (min-width:" ~ "@{bigScreen})";
 
 //Mixins
-.responsiveFont(@sizeValue,@anchoMaximo) {
+.responsiveFont(@sizeValue,
+@anchoMaximo) {
     @vwValue: @sizeValue;
-    @tope:(@anchoMaximo/100)*@sizeValue;
-    font-size: ~"@{vwValue}vw";
-    @media (min-width: ~"@{anchoMaximo}px") {
-        font-size: ~"@{tope}px"; 
+    @tope: (@anchoMaximo/100)*@sizeValue;
+    font-size: ~ "@{vwValue}vw";
+    @media (min-width: ~ "@{anchoMaximo}px") {
+        font-size: ~ "@{tope}px";
     }
 }
 
-.button(@background:@amarillo, @radius:10px, @anchoDeLinea: 3px, @colorDeLinea: @amarillo, @color:white){
+.button(@background: @amarillo,
+@radius: 10px,
+@anchoDeLinea: 3px,
+@colorDeLinea: @amarillo,
+@color: white) {
     background: @background;
     border-radius: @radius;
     padding: .5em 1em;
@@ -33,32 +39,38 @@
     text-decoration: none;
 }
 
-.thin(@style:normal){
+.thin(@style: normal) {
     font-weight: 100;
-    font-style:@style;
+    font-style: @style;
 }
-.light(){
+
+.light() {
     font-weight: 300;
 }
-.regular(){
+
+.regular() {
     font-weight: 400;
 }
-.medium(){
+
+.medium() {
     font-weight: 500;
 }
-.bold(){
+
+.bold() {
     font-weight: 700;
 }
-.extraBold(){
+
+.extraBold() {
     font-weight: 800;
 }
 
-.h2UnderLine(){
-        .responsiveFont(7,1280);
-        .extraBold();
-        margin-bottom: 3px;
-        border-bottom: 5px solid @rojo;
-        display: initial;
+.h2UnderLine() {
+    .responsiveFont(7,
+    1280);
+    .extraBold();
+    margin-bottom: 3px;
+    border-bottom: 5px solid @rojo;
+    display: initial;
 }
 
 //General
@@ -67,13 +79,14 @@ body {
     font-size: 16px;
     font-family: 'Montserrat', sans-serif;
 }
+
 .row {
     margin-right: 0;
     margin-left: 0;
 }
 
 //Especísicos
-.container{
+.container {
     width: 90%;
     max-width: @bigScreen;
 }
@@ -103,7 +116,8 @@ body {
         margin-top: 52vh;
     }
     h1 {
-        .responsiveFont(8,900);
+        .responsiveFont(8,
+        900);
         margin-bottom: .2em;
         span {
             .thin(italic);
@@ -112,7 +126,8 @@ body {
     h2 {
         .regular();
         margin: 0 auto .2em;
-        .responsiveFont(7,900);
+        .responsiveFont(7,
+        900);
         span {
             .thin();
         }
@@ -120,81 +135,100 @@ body {
     h3 {
         .medium();
         margin: 0 auto .8em;
-        .responsiveFont(6,900);
+        .responsiveFont(6,
+        900);
+    }
+    p {
+        text-transform: none;
+        .responsiveFont(3.5,
+        900);
+        line-height: 1.5em;
     }
     .button {
         .button();
-        .responsiveFont(4,900);
+        .responsiveFont(4,
+        900);
     }
 }
 
-#countDown{
+#countDown {
     text-align: center;
     color: white;
     background: @rojo;
     padding: 50px 0;
-    h2{
-        .responsiveFont(5,1280);
+    h2 {
+        .responsiveFont(5,
+        1280);
         .medium();
         margin-top: 0;
     }
-    .button{
-        .button(@rojo, 10px, 3px, white, white);
-        .responsiveFont(4,768);
+    .button {
+        .button(@rojo,
+        10px,
+        3px,
+        white,
+        white);
+        .responsiveFont(4,
+        768);
     }
-    #cuentaRegresiva{
-        .responsiveFont(7,1280);
+    #cuentaRegresiva {
+        .responsiveFont(7,
+        1280);
         .bold();
         margin: 1em auto;
         letter-spacing: 6px;
     }
 }
 
-#evento{
-    background:white;
+#evento {
+    background: white;
     padding: 50px 0;
     text-align: left;
-    h2{
+    h2 {
         .h2UnderLine();
     }
-    p{
-        .responsiveFont(4,600);
+    p {
+        .responsiveFont(4,
+        600);
         .regular();
-        margin-top:2rem;
+        margin-top: 2rem;
         line-height: 1.3em;
     }
 }
 
-#speackers{
-    background:white;
+#speackers {
+    background: white;
     text-align: center;
     padding-bottom: 50px;
-    h2{
+    h2 {
         .h2UnderLine();
         text-align: left;
         display: table;
     }
-    img{
+    img {
         margin-top: 2em;
         border-radius: 50%;
         border: 4px solid white;
         box-shadow: 0 0 12px grey;
         filter: grayscale(100%);
     }
-    h3{
-        .responsiveFont(5,600);
+    h3 {
+        .responsiveFont(5,
+        600);
         .bold();
         margin: 15px auto 10px;
         border-bottom: 3px solid @rojo;
         display: inline-block;
     }
-    p{
-        .responsiveFont(3.5,500);
+    p {
+        .responsiveFont(3.5,
+        500);
         .regular();
         line-height: 1.3em;
     }
-    span{
-        .responsiveFont(4,500);
+    span {
+        .responsiveFont(4,
+        500);
         .medium();
         line-height: 1.3em;
         color: @rojo;
@@ -202,57 +236,80 @@ body {
     }
 }
 
-#patrocinadores{
-        color: white;
-        background: @amarillo;
-        padding: 2rem 0;
-    h2{
-        .responsiveFont(6,768);
-        .medium(); 
-        margin:0 0 .5em;
+#patrocinadores {
+    color: white;
+    background: @amarillo;
+    padding: 2rem 0;
+    h2 {
+        .responsiveFont(6,
+        768);
+        .medium();
+        margin: 0 0 .5em;
     }
-    p{
-        .responsiveFont(3.5,600);
+    p {
+        .responsiveFont(3.5,
+        600);
     }
-    img{
-        margin:0 1rem 2rem 0;
+    img {
+        margin: 0 1rem 2rem 0;
         width: 32px;
-        @media @mqTablet{
+        @media @mqTablet {
             width: 48px;
         }
-        @media @mqLaptop{
+        @media @mqLaptop {
             width: 64px;
         }
     }
-    .button{
-        .button(@amarillo, 10px, 3px, white, white);
-        .responsiveFont(4,600);
+    .button {
+        .button(@amarillo,
+        10px,
+        3px,
+        white,
+        white);
+        .responsiveFont(4,
+        600);
         margin-top: 1em;
         display: table;
     }
-    #marcas{
+    #marcas {
         margin-top: 2rem;
-        img{
+        img {
             width: 100%;
             margin: 0 0 2rem 0;
         }
     }
 }
 
-#pasos{
+#pasos {
     background: @rojo;
     color: white;
     padding: 50px 0;
-    & > div{
+    .tab1,
+    .tab2,
+    .tab3 {
+        color: white;
+        text-decoration: none;
+        opacity: .3;
+        cursor: pointer;
+        &.activa {
+            opacity: 1;
+        }
+    }
+    a {
+        color: white;
+        .bold();
+    }
+    & > div {
         max-width: 900px;
     }
-    h2{
+    h2 {
         text-align: center;
-        .responsiveFont(6,768);
-        .bold(); 
-        margin:0 0 .5em;
+        .responsiveFont(6,
+        768);
+        .bold();
+        margin: 0 0 .5em;
     }
-    .circulo{
+    .circulo {
         display: inline-block;
         border-radius: 50%;
         text-align: center;
@@ -263,47 +320,70 @@ body {
         height: 58px;
         line-height: 1em;
         margin-bottom: 1rem;
-        .responsiveFont(18,320);
+        .responsiveFont(18,
+        320);
         .bold();
-        @media @mqTablet{
+        @media @mqTablet {
             font-size: 22px;
             width: 20px;
             height: 20px;
         }
-        @media @mqLaptop{
+        @media @mqLaptop {
             font-size: 34px;
             width: 32px;
             height: 32px;
         }
     }
-    p.box{
+    p.box {
         display: inline-block;
         margin-left: 1rem;
-        .responsiveFont(4.5,768);
+        .responsiveFont(4.4,
+        768);
         .regular();
-        @media @mqTablet{
+        @media @mqTablet {
             font-size: 13px;
         }
-        @media @mqLaptop{
+        @media @mqLaptop {
             font-size: 16px;
         }
-        span{
+        span {
             .bold();
         }
     }
-    form{
+    #contenido {
+        .apagado {
+            display: none;
+            a {
+                display: none;
+            }
+        }
+        .activo {
+            display: block;
+        }
+        form.activo {
+            display: flex;
+        }
+    }
+    form {
         margin: 2rem auto 0;
         max-width: 900px;
-        label, input{
+        label,
+        input {
             width: 100%;
         }
-        label{
-            .responsiveFont(3.4,768);
+        h2 {
+            .responsiveFont(3.5,
+            600);
+            margin: 1.5em 0 .5em;
+        }
+        label {
+            .responsiveFont(3.4,
+            768);
             margin-bottom: .5em;
             margin: .5em 0;
             display: block;
         }
-        input{
+        input {
             height: 57px;
             border-radius: 10px;
             border: 0;
@@ -311,17 +391,64 @@ body {
             box-sizing: border-box;
             font-size: 1.3rem;
         }
-        .button {
-        .button();
-        .responsiveFont(4,768);
-        margin-top: 2rem;
     }
+    .button {
+        .button();
+        .responsiveFont(3.5,
+        600);
+        margin: 2rem auto 0;
+        display: table;
+    }
+    #paso2,
+    #paso3 {
+        h2 {
+            .responsiveFont(3.5,
+            600);
+            margin: 1.5em 0 .5em;
+        }
+        p {
+            margin-left: 0;
+            .responsiveFont(3,
+            600);
+            line-height: 1.5em;
+        }
     }
 }
 
-footer{
+#ultimos_pasos {
+    color: white;
+    padding-bottom: 3rem;
+    h2 {
+        .responsiveFont(5,
+        600);
+        margin: 1.5em 0 .5em;
+    }
+    h3 {
+        .responsiveFont(3.5,
+        600);
+    }
+    p {
+        margin-left: 0;
+        .responsiveFont(3,
+        600);
+        line-height: 1.5em;
+    }
+    .button {
+        .button();
+        .responsiveFont(3.5,
+        600);
+        margin: 2rem auto 0;
+        display: table;
+    }
+    a {
+        color: white;
+        .bold();
+    }
+}
+
+footer {
     font-size: 1rem;
-    color:white;
+    color: white;
     letter-spacing: 0;
     text-align: center;
     line-height: 30px;

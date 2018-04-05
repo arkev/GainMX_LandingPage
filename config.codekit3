@@ -1606,6 +1606,12 @@
 		"oAP": "\/email.html",
 		"oF": 0
 		},
+	"\/gracias.html": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/gracias.html",
+		"oF": 0
+		},
 	"\/images\/Abel_Marquez.jpg": {
 		"ft": 16384,
 		"iS": 40307,

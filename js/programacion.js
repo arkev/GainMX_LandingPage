@@ -9,6 +9,42 @@ $(document).ready(function () {
             }, 1000);
         }
     });
+    
+    $(".tab1").on("click", function () {
+        //activar el paso 1
+        $("#agile-form").addClass("activo").removeClass("apagado");
+        //desactivar el paso 2
+        $("#paso2").addClass("apagado").removeClass("activo");
+        //Desactivar el paso 3activo
+        $("#paso3").addClass("apagado").removeClass("activo");
+        //agregarle la clase activa a la pesaña que hicimos click
+        $(this).addClass("activa");
+        $(".tab2, .tab3").removeClass("activa");
+    });
+    
+    $(".tab2").on('click', function () {
+        //Desactivar el paso 1
+        $("#agile-form").addClass("apagado").removeClass("activo");
+        //activar el paso 2
+        $("#paso2").addClass("activo").removeClass("apagado");
+        //Desactivar el paso 3
+        $("#paso3").addClass("apagado").removeClass("activo");
+        //agregarle la clase activa a la pesaña que hicimos click
+        $(this).addClass("activa");
+        $(".tab1, .tab3").removeClass("activa");
+    });
+    
+    $(".tab3").on('click', function () {
+        //Desactivar el paso 1
+        $("#agile-form").addClass("apagado").removeClass("activo");
+        //activar el paso 2
+        $("#paso2").addClass("apagado").removeClass("activo");
+        //Desactivar el paso 3
+        $("#paso3").addClass("activo").removeClass("apagado");
+        //agregarle la clase activa a la pesaña que hicimos click
+        $(this).addClass("activa");
+        $(".tab1, .tab2").removeClass("activa");
+    });
 
 });
 
